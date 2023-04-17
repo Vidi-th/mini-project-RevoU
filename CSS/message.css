@@ -1,11 +1,26 @@
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+p {
+    color: #979797;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
 #messageUs {
-    margin-top: 100px;
+    margin-top: 10px;
     padding: 16px 32px;
+
 }
 
 .messageDetail{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
     column-gap: 128px;
 }
@@ -20,17 +35,26 @@ form {
     border: 3px solid #FFC108;
     padding: 32px 32px;
     font-size: 20px;
+    margin-bottom: 60px;
 }
 
-form button {
-    border: none;
+.button {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 10px;
+    margin: 10px 0px;
     background-color: #FFC108;
 }
 
-form button:hover {
+.btn:hover {
     cursor: pointer;
     background-color: #c0a72d;
 }

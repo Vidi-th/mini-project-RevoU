@@ -2,10 +2,14 @@
 //fungsi menampilkan windows ketika load website untuk meminta variable nama
 function inputName() {
     var name = prompt("Enter your name");
-    document.getElementById("name").innerText = name;
+    document.getElementById("nameWelcome").innerText = name;
 }
 
-inputName()
+//fungsi untuk mencari id element untuk nama pada halaman welcome
+let find = document.getElementById("nameWelcome");
+if(find != null){
+    inputName();
+}
 
 //fungsi untuk menambah data form
 function onFormSubmit(e) {
