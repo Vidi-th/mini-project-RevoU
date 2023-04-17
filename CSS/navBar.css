@@ -71,3 +71,34 @@ header{
     background-color: black;
     color: white;
 }
+
+@media only screen and (max-width: 800px) {
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 716px){
+    .navigasi{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+    }
+
+    .navigasi > a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .navigasi > a:hover {
+        background-color: black;
+        color: white;
+    }
+}
