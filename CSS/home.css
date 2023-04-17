@@ -1,0 +1,125 @@
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+p {
+    color: #979797;
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+    padding: 16px 32px;
+}
+
+#ourFacilitation {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+}
+
+.facilitationDetail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 64px;
+    margin-top: 32px;
+}
+
+.facilitationDetailItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#messageUs {
+    margin-top: 100px;
+    padding: 16px 32px;
+}
+
+.messageDetail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    column-gap: 128px;
+}
+
+.messageDetail > div {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FFC108;
+    padding: 32px 32px;
+    font-size: 20px;
+}
+
+form button {
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #FFC108;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #c0a72d;
+}
+
+.input-group{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    column-gap: 32px;
+}
+
+.outputMessage{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    border: 3px solid #FFC108;
+    padding: 32px 32px;
+    font-size: 20px;
+}
+
+#footer {
+    margin-top: 100px;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3b832;
+    color: white;
+}
+
+.footerHeader{
+    width: 75%;
+}
+
+.footerHeader p {
+    padding-left: 30px;
+    font-size: 25px;
+    color: #fffbe7;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.social-icon img {
+    padding: 20px 20px;
+}
+
+.social-icon img:hover{
+    background-color: #c0a72d;
+    cursor: pointer;
+}

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/home.css">
+    <link rel="stylesheet" href="/CSS/navBar.css">
+</head>
+<body>
+    <header id="Header">
+        <div class="navBar">
+            <div class="logo">
+                <img src="/Assets/logo.png" alt="Logo">
+            </div>
+            <div class="navigasi">
+                <a href="homePage.html">Home</a>
+                <a href="ourProfile.html">Our Profile</a>
+                <a href="portofolio.html">Portofolio</a>
+                <a href="messageUs.html">Message Us</a>
+            </div>
+        </div>
+    </header>
+    <section id="welcome">
+        <div class="welcomeSection">
+            <h1> Hi {{Nama}}, Welcome To Website</h1>
+            <p>This website is made for the RevoU mini project with a website builder named Vidityar Adith Nugroho</p>
+        </div>
+        <div class="welcomeImg">
+            <img src="/Assets/img_laptop.jpg" alt="Image Cover" width="1000px">
+        </div>
+    </section>
+    <section id="ourFacilitation">
+        <div class="facilitationHeader">
+            <h1>Our Facilitation</h1>
+            <p>We have the best facilitation to solve your problem</p>
+        </div>
+        <div class="facilitationDetail">
+            <div class="facilitationDetailItem">
+                <img src="/Assets/teacher.png" width="600px" alt="Facilities1">
+                <h2>Professional Teacher</h2>
+            </div>
+            <div class="facilitationDetailItem">
+                <img src="/Assets/field.png" width="600px" alt="Facilities2">
+                <h2>Sport Field</h2>
+            </div>
+            <div class="facilitationDetailItem">
+                <img src="/Assets/classroom.png" width="600px" alt="Facilities3">
+                <h2>Classroom</h2>
+            </div>
+        </div>
+    </section>
+    <section id="messageUs">
+        <h1>Message Us</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae.</p>
+        <div class="messageDetail">
+            <div class="inputMessage">
+                <form action="">
+                    <div class="fromGroup">
+                        <div id="input-name" class="input-group">
+                            <label for="Name">Name</label>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div id="input-date" class="input-group">
+                            <label for="date-of-birth">Date of birth</label>
+                            <input type="date">
+                        </div>
+                        <div id="input-gender" class="input-group">
+                            <label for="gender">Gender</label>
+                            <div>
+                                <input type="radio" id="male" name="gender" value="Male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="Female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <div id="input-message" class="input-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message-item" cols="30" rows="10">Write your message here...</textarea>
+                        </div>
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="outputMessage">
+                <p>Current time</p>
+                <p>22:05:12</p>
+                <p>Name</p>
+                <p>Vidityar Adith</p>
+                <p>Date of Birth</p>
+                <p>16-04-2000</p>
+                <p>Gender</p>
+                <p>Male</p>
+                <p>Message</p>
+                <p>I just wanna increase my knowlegde by join many course.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footerHeader">
+            <h1>Mini Project RevoU</h1>
+            <p>The following website is the result of the RevoU mini project, the Software Engineer program made by Vidityar Adith</p>
+        </div>
+        <div class="social-icon">
+            <img src="/Assets/Facebook.svg" alt="">
+            <img src="/Assets/Instagram.svg" alt="">
+            <img src="/Assets/Twitter.svg" alt="">
+        </div>
+    </footer>
+</body>
+</html>
