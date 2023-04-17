@@ -1,43 +1,3 @@
-h1{
-    font-weight: 700;
-    font-size: 48px;
-    margin: 0 0 16px 0;
-}
-
-p {
-    color: #979797;
-    margin: 0 0 16px 0;
-    font-size: 24px;
-}
-
-#welcome {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 16px;
-    padding: 16px 32px;
-}
-
-#ourFacilitation {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    padding: 16px 32px;
-}
-
-.facilitationDetail{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 64px;
-    margin-top: 32px;
-}
-
-.facilitationDetailItem{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #messageUs {
     margin-top: 100px;
     padding: 16px 32px;
@@ -62,23 +22,15 @@ form {
     font-size: 20px;
 }
 
-.button {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.btn {
-    text-decoration: none;
+form button {
+    border: none;
     font-size: 20px;
     font-weight: 600;
-    margin: 10px 0px;
+    margin-top: 10px;
     background-color: #FFC108;
 }
 
-.btn:hover {
+form button:hover {
     cursor: pointer;
     background-color: #c0a72d;
 }

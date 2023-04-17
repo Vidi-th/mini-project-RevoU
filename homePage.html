@@ -21,14 +21,14 @@
             <div class="navigasi">
                 <a href="homePage.html">Home</a>
                 <a href="ourProfile.html">Our Profile</a>
-                <a href="portofolio.html">Portofolio</a>
+                <a href="achievement.html">Achievement</a>
                 <a href="messageUs.html">Message Us</a>
             </div>
         </div>
     </header>
     <section id="welcome">
         <div class="welcomeSection">
-            <h1> Hi {{Nama}}, Welcome To Website</h1>
+            <h1> Hi <span id="name"></span> , Welcome To Website</h1>
             <p>This website is made for the RevoU mini project with a website builder named Vidityar Adith Nugroho</p>
         </div>
         <div class="welcomeImg">
@@ -60,44 +60,46 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae.</p>
         <div class="messageDetail">
             <div class="inputMessage">
-                <form action="">
+                <form name="messageForm" onsubmit="onFormSubmit(event)">
                     <div class="fromGroup">
                         <div id="input-name" class="input-group">
-                            <label for="Name">Name</label>
-                            <input type="text" placeholder="Name">
+                            <label for="input-name">Name</label>
+                            <input type="text" placeholder="Name" name="name-item" required>
                         </div>
                         <div id="input-date" class="input-group">
                             <label for="date-of-birth">Date of birth</label>
-                            <input type="date">
+                            <input type="date" name="date-item" required>
                         </div>
                         <div id="input-gender" class="input-group">
                             <label for="gender">Gender</label>
                             <div>
-                                <input type="radio" id="male" name="gender" value="Male">
+                                <input type="radio" id="male" name="gender-item" value="Male" required>
                                 <label for="male">Male</label>
-                                <input type="radio" id="female" name="gender" value="Female">
+                                <input type="radio" id="female" name="gender-item" value="Female" required>
                                 <label for="female">Female</label>
                             </div>
                         </div>
                         <div id="input-message" class="input-group">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message-item" cols="30" rows="10">Write your message here...</textarea>
+                            <textarea name="message-item" cols="30" rows="10" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <div class="button">
+                            <input class="btn" type="submit" value="Submit">
                         </div>
                     </div>
-                    <button class="btn">Submit</button>
                 </form>
             </div>
             <div class="outputMessage">
                 <p>Current time</p>
-                <p>22:05:12</p>
+                <p id="current-time"></p>
                 <p>Name</p>
-                <p>Vidityar Adith</p>
+                <p id="sender-full-name"></p>
                 <p>Date of Birth</p>
-                <p>16-04-2000</p>
+                <p id="sender-birth-date"></p>
                 <p>Gender</p>
-                <p>Male</p>
+                <p id="sender-gender"></p>
                 <p>Message</p>
-                <p>I just wanna increase my knowlegde by join many course.</p>
+                <p id="sender-messages"></p>
             </div>
         </div>
     </section>
@@ -112,5 +114,6 @@
             <img src="/Assets/Twitter.svg" alt="">
         </div>
     </footer>
+    <script src="function.js"></script>
 </body>
 </html>

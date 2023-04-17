@@ -17,6 +17,7 @@ a {
 
 header{
     position: sticky;
+    z-index: 1;
     top: 0;
     background-color: #ffef9e;
 }
@@ -28,6 +29,7 @@ header{
     position:sticky;
     padding: 16px 32px;
     top: 0;
+    background-color: #ffef9e;
 }
 
 .logo img {
