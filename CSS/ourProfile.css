@@ -235,4 +235,37 @@ p {
         margin-top: 50px;
     }
 
+    #landing > div {
+        width: 80%;
+    }
+
+    section {
+        padding: 10px 25px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    #landing > div {
+        width: 100%;
+    }
+
+    section {
+        padding: 5px 10px;
+    }
+
+    #about {
+        margin-top: 10px;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 16px;
+    }
+
+    .about-stats{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
 }

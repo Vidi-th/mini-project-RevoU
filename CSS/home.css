@@ -231,4 +231,20 @@ form {
         font-size: 25px;
         color: #fffbe7;
     }
+
+    .messageDetail > div {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .messageDetail{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .messageDetail > div {
+        width: 100%;
+    }
 }
